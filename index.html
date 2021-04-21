@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Expense Tracker</title>
+  <!-- bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <!-- font-family: 'Lato', sans-serif;
+       font-family: 'Roboto', sans-serif; -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+  <div class="body-container">
+
+    <header>
+      <h1>Expense Tracker</h1>
+      <h4>Add a new item</h3>
+    </header>
+
+    <div class="form-div">
+      <form>
+
+        <div class="name-div row form-group">
+          <div class="col-lg-12 col-md-12">
+            <label for="name-label">Name</label>
+            <input class="input-class form-control" placeholder="What is the expense made" id="name-label">
+          </div>
+        </div>
+
+        <div class="date-amount-div row form-group">
+          <div class="col-xl-6 col-lg-6 col-md-6">
+            <label for="date-label">Date</label>
+            <input type="date" id="date-label" class="date-class form-control">
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-6">
+            <label for="amount-label">Amount (₹)</label>
+            <input type="number" class="amount-class form-control" placeholder="Enter the amount please" id="amount-label">
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+
+    <!-- Adding label tag instead of button tag so that it doesn't create a border highlight
+       after we click it and get away from it -->
+    <label type="button" class="add-expense-button btn btn-outline-info col-lg-6 col-md-6">Add Expense</label>
+
+
+    <div class="table-div-container">
+      <table class="table table-striped w-50">
+        <!-- Bootstrap class "table" -->
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Date</th>
+            <th scope="col">Amount (₹)</th>
+          </tr>
+        </thead>
+        <tbody class="table-body-class">
+
+          <!-- All the Table content from JS -->
+
+        </tbody>
+
+      </table>
+    </div>
+
+
+  </div>
+
+
+  <!-- JavaScript -->
+  <script src="index.js" charset="utf-8"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  background-color: #ffbbee;
+  color: white;
+  height: 100vh;
+}
+
+header, .add-expense-button {
+  margin: 2% 0;
+}
+
+table {
+  margin: auto !important;
+  table-layout: fixed;
+  /* Fixes the table width so that
+   one column doesn't squishes
+  the other columns when text
+  comes to next line */
+}
+
+td, th {
+  height: auto;
+}
+
+label:focus, button:focus, td:focus, th:focus {
+  outline: none;
+}
+
+.form-div {
+  width: 45%;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.removeColumnCSS {
+  padding-top: 0;
+  background-color: #ffbbee;
+}
+
+.trashButtonClass {
+  background-color: #ffbbee;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+
+.trashButtonClass:hover {
+  transform: scale(1.7);
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th {
+  vertical-align: middle;
+}
+
+.fa-trash {
+  pointer-events: none;
+}
+
+.deleteRowAnimation {
+  transform: translateX(10rem);
+  transition: all ease 0.5s;
+  opacity: 0;
+}
